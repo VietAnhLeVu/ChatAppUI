@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="815.0" prefWidth="436.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatui.MainUIController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" style="-fx-background-color: #C1D1D9;">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@message.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@group.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@setting.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <VBox prefHeight="815.0" prefWidth="343.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="49.0" prefWidth="337.0" style="-fx-background-color: #C1D1D9; -fx-background-radius: 100;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+               </VBox.margin>
+               <children>
+                  <ImageView fitHeight="26.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@search.png" />
+                     </image>
+                  </ImageView>
+                  <TextField prefHeight="31.0" prefWidth="226.0" promptText="Find your friends and chat" style="-fx-background-color: rgba(0,0,0,0); -fx-background-radius: 100;" />
+               </children>
+            </HBox>
+            <HBox fx:id="clickpanel" alignment="CENTER_LEFT" onMouseClicked="#switchToChattingscene" prefHeight="100.0" prefWidth="340.0" spacing="5.0">
+               <children>
+                  <Circle id="avatar1" fx:id="avatar1" fill="DODGERBLUE" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Circle>
+                  <VBox alignment="CENTER_LEFT" prefHeight="69.0" prefWidth="296.0" spacing="5.0">
+                     <children>
+                        <Label text="Saiki">
+                           <font>
+                              <Font name="Segoe UI Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Okay">
+                           <font>
+                              <Font name="Segoe UI Emoji" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="340.0" spacing="5.0">
+               <children>
+                  <Circle id="avatar2" fx:id="avatar2" fill="DODGERBLUE" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Circle>
+                  <VBox alignment="CENTER_LEFT" prefHeight="69.0" prefWidth="296.0" spacing="5.0">
+                     <children>
+                        <Label text="Nendou">
+                           <font>
+                              <Font name="Segoe UI Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Do you want to get to the ramen shop ?">
+                           <font>
+                              <Font name="Segoe UI Emoji" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="340.0" spacing="5.0">
+               <children>
+                  <Circle id="avatar3" fx:id="avatar3" fill="DODGERBLUE" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Circle>
+                  <VBox alignment="CENTER_LEFT" prefHeight="69.0" prefWidth="296.0" spacing="5.0">
+                     <children>
+                        <Label text="Kaidou">
+                           <font>
+                              <Font name="Segoe UI Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Hey ! I found the headmaster of The Reunion !">
+                           <font>
+                              <Font name="Segoe UI Emoji" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="340.0" spacing="5.0">
+               <children>
+                  <Circle id="avatar4" fx:id="avatar4" fill="DODGERBLUE" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Circle>
+                  <VBox alignment="CENTER_LEFT" prefHeight="69.0" prefWidth="296.0" spacing="5.0">
+                     <children>
+                        <Label text="Teruhashi">
+                           <font>
+                              <Font name="Segoe UI Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Can I come to your house today ?">
+                           <font>
+                              <Font name="Segoe UI Emoji" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="340.0" spacing="5.0">
+               <children>
+                  <Circle id="avatar5" fx:id="avatar5" fill="DODGERBLUE" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Circle>
+                  <VBox alignment="CENTER_LEFT" prefHeight="69.0" prefWidth="296.0" spacing="5.0">
+                     <children>
+                        <Label text="Reita">
+                           <font>
+                              <Font name="Segoe UI Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Plese help me with your telekinesis !">
+                           <font>
+                              <Font name="Segoe UI Emoji" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="340.0" spacing="5.0">
+               <children>
+                  <Circle id="avatar6" fx:id="avatar6" fill="DODGERBLUE" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Circle>
+                  <VBox alignment="CENTER_LEFT" prefHeight="69.0" prefWidth="296.0" spacing="5.0">
+                     <children>
+                        <Label text="Kuboyasu">
+                           <font>
+                              <Font name="Segoe UI Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Can you bring me your homework tomorrow ?">
+                           <font>
+                              <Font name="Segoe UI Emoji" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="340.0" spacing="5.0">
+               <children>
+                  <Circle id="avatar7" fx:id="avatar7" fill="DODGERBLUE" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Circle>
+                  <VBox alignment="CENTER_LEFT" prefHeight="69.0" prefWidth="296.0" spacing="5.0">
+                     <children>
+                        <Label text="Hairo">
+                           <font>
+                              <Font name="Segoe UI Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Let's prepare for the festival with me !">
+                           <font>
+                              <Font name="Segoe UI Emoji" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="340.0" spacing="5.0">
+               <children>
+                  <Circle id="avatar8" fx:id="avatar8" fill="DODGERBLUE" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Circle>
+                  <VBox alignment="CENTER_LEFT" prefHeight="69.0" prefWidth="296.0" spacing="5.0">
+                     <children>
+                        <Label text="Chono">
+                           <font>
+                              <Font name="Segoe UI Black" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="I need your telekinesis for my show please !">
+                           <font>
+                              <Font name="Segoe UI Emoji" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

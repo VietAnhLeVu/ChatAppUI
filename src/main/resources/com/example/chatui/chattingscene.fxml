@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="815.0" prefWidth="436.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatui.ChattingSceneController">
+    <top>
+        <HBox id="chatscene" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="438.0" spacing="15.0" style="-fx-background-color: #76b5c5;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView id="backbutton" fx:id="gobackbutton" fitHeight="35.0" fitWidth="28.0" onMouseClicked="#switchtoMainui" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@angle-left.png" />
+                    </image>
+                </ImageView>
+                <Circle id="avatar" fx:id="avatar1" fill="#1f96ff" radius="24.0" stroke="BLACK" strokeType="INSIDE" />
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                      <Label prefHeight="21.0" prefWidth="114.0" text="Saiki" textOverrun="CENTER_ELLIPSIS">
+                          <font>
+                              <Font size="22.0" />
+                          </font>
+                      </Label>
+                  <Label text="Online">
+                     <graphic>
+                        <Circle fill="#49be25" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+                     </graphic>
+                  </Label>
+               </children>
+            </VBox>
+                <ImageView id="callbutton" fitHeight="32.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                    <image>
+                        <Image url="@phone-call.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets left="100.0" />
+                    </HBox.margin>
+                </ImageView>
+                <ImageView id="videocallbutton" fitHeight="39.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@video-camera-alt.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                </ImageView>
+            </children>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </HBox>
+    </top>
+    <bottom>
+        <HBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="356.0" spacing="10.0" style="-fx-border-color: #2596be; -fx-background-color: #ffffff; -fx-border-style: solid inside;" BorderPane.alignment="CENTER_LEFT">
+            <children>
+                <ImageView id="imageupload" fitHeight="33.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@picture.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                </ImageView>
+                <TextField id="typeborder" fx:id="typeborder" prefHeight="37.0" prefWidth="259.0" style="-fx-border-width: 2.5; -fx-background-color: #ffffff; -fx-border-radius: 120; -fx-border-style: solid;">
+                    <font>
+                        <Font name="Segoe UI" size="15.0" />
+                    </font>
+                </TextField>
+                <ImageView fitHeight="33.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@paper-plane.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="33.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@microphone.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                </ImageView>
+            </children>
+        </HBox>
+    </bottom>
+    <center>
+        <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" vbarPolicy="NEVER" BorderPane.alignment="CENTER">
+            <content>
+                <Pane prefHeight="704.0" prefWidth="435.0">
+                    <children>
+                        <Label layoutX="8.0" layoutY="17.0" prefHeight="56.0" prefWidth="272.0" style="-fx-background-radius: 120; -fx-border-radius: 100; -fx-border-style: solid; -fx-background-color: #66b6d2;" text="What are you gonna do today ?" textOverrun="CLIP">
+                            <padding>
+                                <Insets left="5.0" />
+                            </padding>
+                     <font>
+                        <Font name="Segoe UI Emoji" size="18.0" />
+                     </font>
+                        </Label>
+                  <Label layoutX="156.0" layoutY="108.0" prefHeight="56.0" prefWidth="272.0" style="-fx-background-radius: 120; -fx-border-radius: 100; -fx-border-style: solid; -fx-background-color: #e9f5f9;" text="I have no idea, are u up to sth ?" textOverrun="CLIP">
+                     <font>
+                        <Font name="Segoe UI Emoji" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="8.0" layoutY="199.0" prefHeight="56.0" prefWidth="367.0" style="-fx-background-radius: 120; -fx-border-radius: 100; -fx-border-style: solid; -fx-background-color: #66b6d2;" text="I'm going to be at the stadium for the show" textOverrun="CLIP">
+                     <font>
+                        <Font name="Segoe UI Emoji" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="105.0" layoutY="381.0" prefHeight="56.0" prefWidth="323.0" style="-fx-background-radius: 120; -fx-border-radius: 100; -fx-border-style: solid; -fx-background-color: #e9f5f9;" text="Nah, not my cup of tea, go having fun" textOverrun="CLIP">
+                     <font>
+                        <Font name="Segoe UI Emoji" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="8.0" layoutY="290.0" prefHeight="56.0" prefWidth="183.0" style="-fx-background-radius: 120; -fx-border-radius: 100; -fx-border-style: solid; -fx-background-color: #66b6d2;" text="Do you wanna join ?" textOverrun="CLIP">
+                     <font>
+                        <Font name="Segoe UI Emoji" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="8.0" layoutY="472.0" prefHeight="56.0" prefWidth="326.0" style="-fx-background-radius: 120; -fx-border-radius: 100; -fx-border-style: solid; -fx-background-color: #66b6d2;" text="Such a pity ! Well, see you on Monday" textOverrun="CLIP">
+                     <font>
+                        <Font name="Segoe UI Emoji" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="371.0" layoutY="563.0" prefHeight="56.0" prefWidth="57.0" style="-fx-background-radius: 120; -fx-border-radius: 100; -fx-border-style: solid; -fx-background-color: #e9f5f9;" text="Okay" textOverrun="CLIP">
+                     <font>
+                        <Font name="Segoe UI Emoji" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="359.0" layoutY="623.0" text="Delivered">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="383.0" layoutY="441.0" text="Read">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                    </children>
+                </Pane>
+            </content>
+        </ScrollPane>
+    </center>
+</BorderPane>
